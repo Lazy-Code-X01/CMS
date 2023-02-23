@@ -109,9 +109,15 @@
     }
     .featured{
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      .heading{
+        font-family: 30px !important;
+      }
     }
     .reverse-flex{
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      .heading{
+        font-family: 30px !important; 
+      }
     }
     .grid-item-1 {
       order: 2;
@@ -134,11 +140,7 @@
       text-align: center;
       line-height: 40px;
     }
-    .heading{
-      font-size: 32px;
-      text-align: center;
-      line-height: 40px;
-    }
+
     .about-container{
       .heading{
         font-size: 32px;
