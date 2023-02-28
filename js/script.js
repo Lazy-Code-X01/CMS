@@ -94,3 +94,19 @@ gsap.from(".team_img_wrapper img", {
   delay: 3,
   duration: 1,
 });
+
+// ==== FEATURESE SECTION ==== //
+// gsap.from(".review-heading", {
+//   opacity: 0,
+//   y: 20,
+//   delay: 1,
+//   duration: 1,
+// });
+// gsap.from(".review-container", {
+//   opacity: 0,
+//   y: -20,
+//   delay: 1.4,
+//   duration: 1,
+//   stagger: 0.3,
+// });
+

@@ -1,4 +1,82 @@
 
+@media screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 3rem;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  // featured section
+
+  .grid-item-1 {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .featured-item-1{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .main-heading {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .about-container{
+    .heading{
+      font-size: 32px;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+  .info-text {
+    font-size: 16px;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  .info {
+    font-size: 16px;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  .btn_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item-2 {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .featured-item-2{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team_img_wrapper {
+    width: 350px;
+    height: 350px;
+  }
+  .featured_info span {
+    font-size: 19px;
+  }
+}  
+
+
 /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
 @media screen and (min-width: 768px) {
     .toggle_btn {
@@ -63,9 +141,6 @@
     .main-heading {
       font-size: 35px;
     }
-    .heading{
-      font-size: 35px;
-    }
     .view_more_btn {
       width: 140px;
       height: 55px;
@@ -85,104 +160,43 @@
       line-height: 23px;
       font-size: 14px;
     }
-    .trusted-companies{
-      .heading{
-        font-size: 32px;
+    // features
+    .features{
+      flex-direction: column;
+
+      &.reverse{
+        flex-direction: column-reverse;
       }
-      .companies{
-        flex-direction: column;
-        gap: 40px;
+      .featured-image{
+        width: 100%;
+      }
+      .featured-text{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .heading{
+          font-size: 32px;
+        }
+        .info{
+          padding: 0;
+        }
+      }
+    }
+    // abiut container
+    .about-container{
+      .container{
+        padding: 2em;
+      }
+    }
+
+    // review 
+    .review-container{
+      width: 100%;
+      .reviews{
+        gap: 20px;
       }
     }
   }
   
-  @media screen and (max-width: 991px) {
-    .wrapper {
-      padding-top: 3rem;
-    }
-    .grid-cols-2 {
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    }
-    // featured section
-    .featured{
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    }
-    .featured{
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-      .heading{
-        font-family: 30px !important;
-      }
-    }
-    .reverse-flex{
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-      .heading{
-        font-family: 30px !important; 
-      }
-    }
-    .grid-item-1 {
-      order: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 0;
-    }
-    .featured-item-1{
-      order: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 0;
-    }
-    .main-heading {
-      font-size: 32px;
-      text-align: center;
-      line-height: 40px;
-    }
-
-    .about-container{
-      .heading{
-        font-size: 32px;
-        text-align: center;
-        line-height: 40px;
-      }
-    }
-    .info-text {
-      font-size: 16px;
-      text-align: center;
-      padding: 0.7rem;
-    }
-    .info {
-      font-size: 16px;
-      text-align: center;
-      padding: 0.7rem;
-    }
-    .btn_wrapper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .grid-item-2 {
-      order: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .featured-item-2{
-      order: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .team_img_wrapper {
-      width: 350px;
-      height: 350px;
-    }
-    .featured_info span {
-      font-size: 19px;
-    }
-  }  
+  

@@ -42,6 +42,13 @@ button {
   outline: none;
   cursor: pointer;
 }
+.dot{
+  background: linear-gradient(to bottom, #000080 10%, #0b0b8a 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
 /* ==== CONTAINER ==== */
 .container {
   width: 100%;
