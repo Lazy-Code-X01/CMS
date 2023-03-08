@@ -13,6 +13,15 @@ CloseBtnId.addEventListener("click", () => {
   navId.classList.remove("show");
 });
 
+// when i click on the li the nav will close
+const navLink = document.querySelectorAll(".nav_menu_item");
+function linkAction() {
+  navId.classList.remove("show");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+
+
 // ==== ONCLICK PLAY ADIO AND PAUSE ==== //
 const audio = document.getElementById("audio");
 audio.volume = 0.5;
@@ -33,7 +42,30 @@ pauseBtn.addEventListener("click", () => {
   playBtn.classList.add("hide");
 });
 
-// ==== COSTUMER REVIEW SLIDER ==== //
+// ==== SCROLL TO TOP BUTTON ==== //
+const scrollBtn = document.querySelector(".btn-style");
+const btnVisibility = () => {
+  if (window.scrollY > 400) {
+      scrollBtn.style.visibility = "visible";
+  } else {
+      scrollBtn.style.visibility = "hidden";
+  }
+};
+
+document.addEventListener("scroll", () => {
+  btnVisibility();
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});
+// end
+
+
+
 
 
 
@@ -94,19 +126,3 @@ gsap.from(".team_img_wrapper img", {
   delay: 3,
   duration: 1,
 });
-
-// ==== FEATURESE SECTION ==== //
-// gsap.from(".review-heading", {
-//   opacity: 0,
-//   y: 20,
-//   delay: 1,
-//   duration: 1,
-// });
-// gsap.from(".review-container", {
-//   opacity: 0,
-//   y: -20,
-//   delay: 1.4,
-//   duration: 1,
-//   stagger: 0.3,
-// });
-

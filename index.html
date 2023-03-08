@@ -15,8 +15,21 @@
     rel="stylesheet"
   />
 
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+      <!--email js-->
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+      </script>
+        <script type="text/javascript">
+          (function(){
+              emailjs.init("dTukSFnS65nVipcns");
+          })();
+      </script>
+      <!--end of email js-->
 </head>
 <body>
 
@@ -37,16 +50,16 @@
 
           <ul class="nav_menu_list">
             <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">about</a>
+              <a href="#about " class="nav_menu_link">about</a>
             </li>
             <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">features</a>
+              <a href="#features" class="nav_menu_link">features</a>
             </li>
             <li class="nav_menu_item">
               <a href="#" class="nav_menu_link">Team</a>
             </li>
             <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">contact</a>
+              <a href="#reach-us" class="nav_menu_link">contact</a>
             </li>
           </ul>
         </div>
@@ -141,7 +154,7 @@
     </section>
 
     <!-- features section -->
-    <div class="features-container">
+    <div class="features-container" id="features">
       <section class="wrapper">
         <div class="container ">
           <div class="features">
@@ -243,8 +256,9 @@
       </section>
     </div>
 
+
     <!-- ==== ABOUT ==== -->
-    <section class="wrapper about-container" >
+    <section class="wrapper about-container" id="about">
       <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
         <audio src="./audio/Studio_Project.mp3" id="audio" loop></audio>
         <div class="playContainer ">
@@ -321,14 +335,70 @@
         </div>
     </section>
 
+    <section class="wrapper" id="reach-us">
+      <div class="container">
+        <div class="contact-container">
+            <div class="contact-content">
+              <h2 class="contact-title">Let's help manage your church</h2>
+              <figure class="contact-banner"> 
+                <img src="./img//contactsvg.svg" alt="contact">
+              </figure>
+            </div>
+
+            <form action="" class="contact-form form">
+              <p class="alert"></p>
+              <!--name-->
+              <div class="form-holder">
+                <label for="name">Name</label> <br>
+                <input type="text" id="name">
+              </div>
+              <!--phone-->
+              <div class="form-holder">
+                <label for="phone">Phone</label> <br>
+                <input type="number" id="phone">
+              </div>
+              <!--email-->
+              <div class="form-holder">
+                <label for="email">Email</label> <br>
+                <input type="email" id="email">
+              </div>
+              <!--message-->
+              <div class="form-holder">
+                <label for="message">Message</label> <br>
+                <!-- <input type="email"> -->
+                <textarea name="" id="message"></textarea>
+              </div>
+              <div class="btn-container">
+                <!--remeber to put the onclick back-->
+                <button type="submit" id="reach-us-btn">
+                    <a>
+                    <i class='bx bx-world'></i>
+                    REACH US
+                  </a>
+                </button>
+              </div>
+            </form>
+        </div>
+
+      </div>
+    </section>
 
     <footer></footer>
+
+    <!--scroll to top button-->
+    <div className="scroll-to-top">
+      <span class="scroll btn-position btn-style">
+        <i class='bx bx-chevrons-up'></i>
+      </span>
+    </div>
+
 
     <!-- ==== ANIMATE ON SCROLL JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- ==== GSAP CDN ==== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <!-- ==== SCRIPT.JS ==== -->
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" defer></script> 
+    <script src="./js/email.js"></script>
   </body>
 </html>
