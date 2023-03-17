@@ -93,7 +93,7 @@ button {
 
 @media screen and (min-width: 1040px) {
   .container {
-    width: 1040px;
+    width: 95%;
     margin: 0 auto;
   }
 }
@@ -142,6 +142,10 @@ button {
 .header {
   height: var(--fixed-header-height);
   padding: 0 1.7rem;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background-color: #fafbfb;
 }
 
 /* ==== NAV ==== */
@@ -214,6 +218,7 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  padding-top: 5rem;
 }
 
 .grid-item-1 {

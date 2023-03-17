@@ -8,6 +8,11 @@
 .header {
     height: var(--fixed-header-height);
     padding: 0 1.7rem;
+	width: 100%;
+	// box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+	position: fixed;
+	z-index: 99;
+	background-color: #fafbfb;
   }
   
   /* ==== NAV ==== */
@@ -103,7 +108,9 @@
 	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	// background-color: #000080;
 	gap: 4rem;
+	padding-top: 5rem;
 }
 
 .grid-item-1 {
