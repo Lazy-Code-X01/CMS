@@ -143,7 +143,6 @@ button {
   height: var(--fixed-header-height);
   padding: 0 1.7rem;
   width: 100%;
-  position: fixed;
   z-index: 99;
   background-color: #fafbfb;
 }
