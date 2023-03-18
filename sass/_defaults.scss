@@ -31,6 +31,7 @@ body {
   height: 100vh;
   // overflow-x:unset;
   background-color: #fafbfb;
+
 }
 html{
   scroll-behavior: smooth;
@@ -85,12 +86,13 @@ button {
 
 /* ==== CONTAINER ==== */
 .container {
+  overflow-x: hidden;
   width: 100%;
 }
 @media screen and (min-width: 1040px) {
   .container {
     // width: 1040px;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
 }

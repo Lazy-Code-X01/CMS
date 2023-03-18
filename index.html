@@ -18,7 +18,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <!--email js-->
   <script type="text/javascript"
@@ -35,14 +35,14 @@
   <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
 </head>
 <body>
-
     <!-- ==== HEADER ==== -->
     <header class="container header">
       <!-- ==== NAVBAR ==== -->
       <nav class="nav">
         
         <div class="logo">
-          <h2>CaaS.</h2>
+          <!-- <h2>CaaS.</h2> -->
+          <img src="./img/caas.svg" alt="img loading...">
         </div>
 
         <!-- nav menu -->
@@ -80,7 +80,7 @@
         <div class="grid-cols-2">
           <div class="grid-item-1">
             <h1 class="main-heading">
-              Unlock <span>Tracking.</span>
+              Unlock <span>Tracking</span>
               <br />
               Possibilites.
             </h1>
@@ -99,8 +99,9 @@
 
           <div class="grid-item-2">
             <div class="team_img_wrapper">
-              <!-- <img src="./img/team2.svg" alt="team-img" /> -->
               <img src="./img/team.svg" alt="team-img" />
+              <!-- <img src="./img/bg.png" alt="team-img" /> -->
+              <!-- <img src="./img/Group 3.png" alt="team-img" /> -->
             </div>
             
           </div>
@@ -278,9 +279,9 @@
     </section>                          
 
     <!-- REVIEW SECTION -->
-    <section class="wrapper">
+    <section class="wrapper rev">
       <div class="container">
-        <h1 class="review-heading" data-aos="fade-left" data-aos-duration="1000">See What People Say</h1>
+        <h1 class="review-heading" data-aos="fade-left" data-aos-duration="1000">What to expect</h1>
         <div class="reviews">
           <div class="review-container" data-aos="zoom-in-right" data-aos-duration="1000">
             <div class="bubble">
@@ -338,7 +339,7 @@
         </div>
     </section>
 
-    <section class="wrapper" id="reach-us">
+    <section class="wrapper none" id="reach-us">
       <div class="container">
         <div class="contact-container">
             <div class="contact-content">
@@ -385,9 +386,34 @@
 
       </div>
     </section>
+
     <!--footer-->
-    
-    <footer></footer>
+    <footer class="wrapper">
+      <div class="container">                        
+        <div class="footer">
+          <div class="logo">
+            <img src="./img/caas.svg" alt="">
+          </div>
+          <div class="quick-links">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Features</a></li>
+            </ul>
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+              <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+              <li><a href=""><i class='bx bxl-linkedin'></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© CaaS 2023 All right reserved. </p>
+      </div>
+    </footer>
 
     <!--scroll to top button-->
     <div className="scroll-to-top">
