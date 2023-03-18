@@ -88,7 +88,7 @@ button {
 
 /* ==== CONTAINER ==== */
 .container {
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
 }
 
