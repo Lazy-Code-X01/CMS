@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact CaaS</title>
+
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
+    
+  <!-- ==== STYLE.CSS ==== -->
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <!-- ====  REMIXICON CDN ==== -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- ==== HEADER ==== -->
+    <header class="container header">
+        <!-- ==== NAVBAR ==== -->
+        <nav class="nav">
+            
+            <div class="logo">
+            <!-- <h2>CaaS.</h2> -->
+            <img src="./img/caas.svg" alt="img loading...">
+            </div>
+    
+            <!-- nav menu -->
+            <div class="nav_menu" id="nav_menu">
+            <button class="close_btn" id="close_btn">
+                <i class="ri-close-fill"></i>
+            </button>
+    
+            <ul class="nav_menu_list">
+                <li class="nav_menu_item">
+                <a href="./index.html" class="nav_menu_link">Home</a>
+                </li>
+            </ul>
+            </div>
+    
+            <button class="toggle_btn" id="toggle_btn">
+            <i class="ri-menu-line"></i>
+            </button>
+            
+        </nav>
+    </header>
+    
+    <!-- hero section -->
+    <section class="wrapper">
+        <div class="container">
+          <div class="grid-cols-2">
+            <div class="grid-item-1" style="">
+              <h1 class="main-heading">
+                Get in touch with us. <br>
+                <span class="main-heading-span">We are here to help you.</span>
+              </h1>
+            </div>
+  
+            <div class="grid-item-2">
+              <div class="team_img_wrapper">
+                <img src="./img/contact (2).svg" alt="team-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--quote section-->
+      <section class="wrapper">
+        <div class="container">
+            <div class="quote-container">
+                <div class="inner-container">
+                    <i class='bx bxs-quote-alt-left' ></i>
+                    <p>
+                        At CaaS, we belive that churhces should be able to focus on their core mission of spreading the gospel. We are here to help you with the rest.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--contact section-->
+      <section class="wrapper">
+        <div class="container">
+            <div class="contact-container">
+                <div class="inner-container">
+                    <div class="desc">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class='bx bx-chat' ></i>
+                                <h4>Contact Sales</h4>
+                            </div>
+                            <p>Get in touch with product expert to see how CaaS can help your Church<p>
+                            <p>Explore our pricing plans and see how CaaS can help your Church</p>
+                        </div>
+                        <div class="card card2">
+                            <div class="card-header">
+                                <i class='bx bx-support' ></i>
+                                <h4>Get Support</h4>
+                            </div>
+                            <p>Need a little help from a CaaS support representative? We're are here for you.<p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-holder">
+                            <label for="name">Full name</label> 
+                            <br>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form-holder">
+                            <label for="number">Phone number</label> 
+                            <br>
+                            <input type="number" id="number">
+                        </div>
+                        <div class="form-holder">
+                            <label for="email">Email</label> 
+                            <br>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form-holder">
+                            <label for="message">Message</label> 
+                            <br>
+                            <textarea id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="btn-container">
+                            <button>
+                                <span>Send</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+
+         <!--footer-->
+    <footer class="wrapper">
+        <div class="container">                        
+          <div class="footer">
+            <div class="logo">
+              <img src="./img/caas.svg" alt="">
+            </div>
+            <div class="quick-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <!-- <li><a href="">Team</a></li> -->
+                <!-- <li><a href="">Features</a></li> -->
+              </ul>
+            </div>
+            <div class="social-icons">
+              <ul>
+                <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+                <li><a href=""><i class='bx bxl-linkedin'></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© CaaS 2023 All right reserved. </p>
+        </div>
+      </footer>
+  
+    <!-- ==== ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="./js/script.js" defer></script> 
+    <script src="./js/email.js"></script>
+</body>
+</html>

@@ -98,6 +98,26 @@ button {
     margin: 0 auto;
   }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .btn-position {
   position: fixed;
   bottom: 40px;
@@ -575,99 +595,6 @@ button {
   line-height: 1;
 }
 
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  margin-top: 2em;
-  background-color: #334157;
-  width: 100%;
-  display: none;
-}
-.contact-container.none {
-  display: none;
-}
-.contact-container .contact-content .contact-title {
-  margin-bottom: 60px;
-  text-align: center;
-  font-weight: lighter;
-  color: #000080;
-  font-size: 30px;
-  text-transform: capitalize;
-  font-family: "My Soul", cursive;
-}
-.contact-container .contact-content .contact-banner img {
-  width: 100%;
-}
-.contact-container .contact-form .form-holder label {
-  font-size: 16px;
-  font-weight: 700;
-  color: #363636;
-}
-.contact-container .contact-form .form-holder input {
-  margin-top: 10px;
-  margin-bottom: 33px;
-  border: none;
-  background: none;
-  outline: none;
-  background-color: #F1F9FF;
-  border: 2px solid #BCE0FD;
-  height: 40px;
-  width: 320px;
-  border-radius: 5px;
-  color: #737373;
-  text-transform: capitalize;
-  text-indent: 10px;
-}
-.contact-container .contact-form .form-holder textarea {
-  background: none;
-  border: none;
-  outline: none;
-  width: 320px;
-  height: 140px;
-  margin-top: 10px;
-  resize: none;
-  border-radius: 5px;
-  background-color: #F1F9FF;
-  border: 2px solid #BCE0FD;
-  padding: 10px;
-  padding: 10px;
-  font-family: "Nunito Sans", sans-serif;
-}
-.contact-container .contact-form .btn-container {
-  margin-top: 16px;
-}
-.contact-container .contact-form .btn-container button {
-  border: none;
-  outline: none;
-  background: none;
-  width: 148px;
-  height: 48px;
-  cursor: pointer;
-  background-color: #0000b3;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact-container .contact-form .btn-container button a {
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-.contact-container .contact-form .btn-container button a i {
-  padding-right: 5px;
-  font-size: 18px;
-  color: #E0F8F5;
-}
-.contact-container .contact-form .btn-container button:active {
-  background-color: #0000e6;
-  transition: 0.3s ease;
-  transform: scale(98%);
-}
-
 footer {
   width: 100%;
   background-color: white;
@@ -731,6 +658,148 @@ footer .copyright {
 
 .none {
   display: none;
+}
+
+.quote-container {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #e2f2ff;
+  padding: 6rem 5rem;
+  border-radius: 10px;
+}
+.quote-container .inner-container {
+  position: relative;
+}
+.quote-container .inner-container p {
+  color: #334157;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+.quote-container .inner-container i {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: #000080;
+}
+
+.contact-container {
+  width: 100%;
+  padding: 2rem 5rem;
+  border-radius: 10px;
+}
+.contact-container .inner-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .contact-container .inner-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.contact-container .inner-container .desc {
+  width: 49.2%;
+}
+.contact-container .inner-container .desc .card {
+  padding: 40px 30px;
+  border-radius: 10px;
+  background-color: #e9f3ff;
+}
+@media screen and (max-width: 768px) {
+  .contact-container .inner-container .desc .card {
+    width: 100%;
+  }
+}
+.contact-container .inner-container .desc .card.card2 {
+  background-color: #f3f8ed;
+  background-color: #ecf4e2;
+  margin-top: 2rem;
+}
+.contact-container .inner-container .desc .card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.contact-container .inner-container .desc .card .card-header i {
+  font-size: 40px;
+  color: #000080;
+}
+.contact-container .inner-container .desc .card .card-header h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000080;
+}
+.contact-container .inner-container .desc .card p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact-container .inner-container .contact-form {
+  width: 48.2%;
+}
+.contact-container .inner-container .contact-form .form-holder label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #363636;
+}
+.contact-container .inner-container .contact-form .form-holder input {
+  margin-top: 10px;
+  margin-bottom: 33px;
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #F1F9FF;
+  border: 2px solid #BCE0FD;
+  height: 50px;
+  width: 320px;
+  width: 90%;
+  border-radius: 5px;
+  color: #737373;
+  text-transform: capitalize;
+  text-indent: 10px;
+}
+.contact-container .inner-container .contact-form .form-holder textarea {
+  background: none;
+  border: none;
+  outline: none;
+  width: 320px;
+  height: 140px;
+  width: 90%;
+  margin-top: 10px;
+  resize: none;
+  border-radius: 5px;
+  background-color: #F1F9FF;
+  border: 2px solid #BCE0FD;
+  padding: 10px;
+  padding: 10px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.contact-container .inner-container .contact-form .btn-container {
+  margin-top: 16px;
+}
+.contact-container .inner-container .contact-form .btn-container button {
+  border: none;
+  outline: none;
+  background-color: #000080;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contact-container .inner-container .contact-form .btn-container button:hover {
+  background-color: #000080;
+  transition: 0.3s ease;
+  transform: scale(99%);
 }
 
 @media screen and (max-width: 991px) {

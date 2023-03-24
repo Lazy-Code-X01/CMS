@@ -505,128 +505,6 @@
 	}
 }
 
-// --------- conact 
-// --------------  added a display of none beacuase i feel it's should just be an input field of mail and we get to take them up from there
-.contact-container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 10px;
-	margin-top: 2em;
-	background-color: #334157;
-	// flex-wrap: wrap;
-	width: 100%;
-	display: none;
-
-	&.none{
-		display: none;
-	}
-	.contact-content{
-		// width: 49.2%;
-
-		.contact-title{
-			margin-bottom: 60px;
-			text-align: center;
-			font-weight: lighter;
-			color: #000080;
-			font-size: 30px;
-			text-transform: capitalize;
-			font-family: 'My Soul', cursive;
-		}
-		.contact-banner{
-			img{
-				width: 100%;
-			}
-		}
-	}
-
-	.contact-form{
-		// width: 49.2%;
-		
-		.form-holder{
-			label{
-				font-size: 16px;
-				font-weight:700 ;
-				color: #363636;
-			}
-			input{
-				margin-top: 10px;
-				margin-bottom: 33px;
-				border: none;
-				background: none;
-				outline: none;
-				background-color: #F1F9FF;
-				border: 2px solid #BCE0FD;
-				height: 40px;
-				width: 320px;
-				border-radius: 5px;
-				color: darken($color: #808080, $amount: 5);
-				
-				text-transform: capitalize;
-				text-indent: 10px;
-			}
-			textarea{
-				background: none;
-				// text-indent: 10px;
-				border:none;
-				outline: none;
-				width: 320px;
-				height: 140px;
-				margin-top: 10px;
-				resize: none;
-				border-radius:5px;
-				background-color: #F1F9FF;
-				border: 2px solid #BCE0FD;padding: 10px;
-				padding: 10px;
-				font-family: 'Nunito Sans', sans-serif;
-			}
-		}
-
-		.btn-container{
-			margin-top: 16px;
-
-			button{
-				border: none;
-				outline: none;
-				background: none;
-				width: 148px;
-				height: 48px;
-				cursor: pointer;
-				background-color: lighten($color: #000080, $amount: 10);
-				border-radius: 5px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-	
-				a{
-					font-size: 16px;
-					color: white;
-					text-decoration: none;
-					font-weight: 500;
-					i{
-						padding-right: 5px;
-						font-size: 18px;
-						color: #E0F8F5;
-					}
-				}
-
-				&:hover{
-					// background-color: lighten($color: $primary-color, $amount: 10);
-					// transition: .3s ease;
-					// transform: scale(99%);
-				}
-
-				&:active{
-					background-color: lighten($color: #000080, $amount: 20);
-					transition: .3s ease;
-					transform: scale(98%);
-				}
-			}
-		}
-	}
-}
-
-
 // footer
 footer {
 	width: 100%;
@@ -705,4 +583,165 @@ footer {
 	display: none;
 }
 
+
+// ================== contact section styling ==================
+.quote-container{
+	margin-top: 3rem;
+	width: 100%;
+	// background-color: #e9f3ff;
+	background-color: darken($color: #F1F9FF, $amount: 3);
+	padding:  6rem 5rem;
+	
+	border-radius: 10px;
+	.inner-container{
+		position: relative;
+		p{
+			color: #334157;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1.2;
+			text-align: center;
+		}
+		i{
+			position: absolute;
+			bottom: 75px;
+			left: 50%;
+			transform: translateY(-50%);
+			font-size: 60px;
+			color: #000080;
+		}
+	}
+}
+
+.contact-container{
+	width: 100%;
+	padding:  2rem 5rem;
+	border-radius: 10px;
+
+	.inner-container{
+		display: flex;
+		justify-content: space-between;
+		// align-items: center;
+		flex-wrap: wrap;
+		// gap: 1rem;
+		// background-color: #000080;
+		
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			justify-content: center;
+			gap: 1rem;
+		}
+
+		.desc{
+			width: 49.2%;
+			// background-color: #e9f3ff;
+			.card{
+				padding: 40px 30px;
+				border-radius: 10px;
+				background-color: #e9f3ff;
+				// border: 2px solid #BCE0FD;
+				@media screen and (max-width: 768px) {
+					width: 100%;
+				}
+				&.card2{
+					background-color: #f3f8ed;
+					background-color: darken($color: #f3f8ed, $amount: 3);
+					margin-top: 2rem;
+				}
+				.card-header{
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					margin-bottom: 1rem;
+
+					i{
+						font-size: 40px;
+						color: #000080;
+					}
+
+					h4{
+						font-size: 20px;
+						font-weight: 700;
+						color: #000080;
+					}
+				}
+				p{
+					font-size: 16px;
+					line-height: 1.5;
+					font-weight: 500;
+					margin-bottom: 20px;
+				}
+			}
+
+		}
+
+		.contact-form{
+			width: 48.2%;
+			// background-color: #363636;
+			
+			.form-holder{
+
+				label{
+					font-size: 16px;
+					font-weight:700 ;
+					color: #363636;
+				}
+
+				input{
+					margin-top: 10px;
+					margin-bottom: 33px;
+					border: none;
+					background: none;
+					outline: none;
+					background-color: #F1F9FF;
+					border: 2px solid #BCE0FD;
+					height: 50px;
+					width: 320px;
+					width: 90%;
+					border-radius: 5px;
+					color: darken($color: #808080, $amount: 5);
+					text-transform: capitalize;
+					text-indent: 10px;
+				}
+				textarea{
+					background: none;
+					// text-indent: 10px;
+					border:none;
+					outline: none;
+					width: 320px;
+					height: 140px;
+					width: 90%;
+					margin-top: 10px;
+					resize: none;
+					border-radius:5px;
+					background-color: #F1F9FF;
+					border: 2px solid #BCE0FD;padding: 10px;
+					padding: 10px;
+					font-family: 'Nunito Sans', sans-serif;
+				}
+			}
+
+			.btn-container{
+				margin-top: 16px;
+
+				button{
+					border: none;
+					outline: none;
+					background-color: #000080;
+					color: white;
+					padding: 10px 20px;
+					border-radius: 5px;
+					font-size: 16px;
+					font-weight: 500;
+					cursor: pointer;
+					&:hover{
+						background-color: #000080;
+						transition: .3s ease;
+						transform: scale(99%);
+					}
+				}
+			}
+		}
+	}
+}
 @import './mobile';
