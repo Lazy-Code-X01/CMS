@@ -86,12 +86,22 @@ button {
 
 /* ==== CONTAINER ==== */
 .container {
-  overflow: hidden;
+  // overflow: hidden;
+  width: 100%;
+}
+
+// i added the cancel over flow because my quote icon was not visible on z-index
+.cancel-overflow{
+  // overflow: hidden;
   width: 100%;
 }
 @media screen and (min-width: 1040px) {
   .container {
     // width: 1040px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cancel-overflow{
     width: 90%;
     margin: 0 auto;
   }

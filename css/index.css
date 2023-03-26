@@ -88,12 +88,19 @@ button {
 
 /* ==== CONTAINER ==== */
 .container {
-  overflow: hidden;
+  width: 100%;
+}
+
+.cancel-overflow {
   width: 100%;
 }
 
 @media screen and (min-width: 1040px) {
   .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cancel-overflow {
     width: 90%;
     margin: 0 auto;
   }
@@ -660,6 +667,10 @@ footer .copyright {
   display: none;
 }
 
+.cancel-overflow {
+  overflow: unset;
+}
+
 .quote-container {
   margin-top: 3rem;
   width: 100%;
@@ -1006,5 +1017,55 @@ footer .copyright {
   }
   .contact-container .contact-form .form-holder textarea {
     width: 100%;
+  }
+  .quote-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  .contact-container {
+    padding: 2rem 2rem;
+  }
+  .contact-container .inner-container {
+    gap: 2rem;
+  }
+  .contact-container .inner-container .desc {
+    width: 100%;
+  }
+  .contact-container .inner-container .desc .card {
+    text-align: center;
+  }
+  .contact-container .inner-container .desc .card .card-header {
+    justify-content: center;
+  }
+  .contact-container .inner-container .desc .card p {
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  .contact-container .inner-container .contact-form {
+    width: 100%;
+  }
+  .contact-container .inner-container .contact-form .form-holder input {
+    width: 100%;
+  }
+  .contact-container .inner-container .contact-form .form-holder textarea {
+    width: 100%;
+  }
+  .contact-container .inner-container .contact-form .btn-container button {
+    padding: 15px 50px;
+  }
+}
+@media (max-width: 425px) {
+  .contact-container {
+    padding: 2rem 1rem;
+  }
+  .quote-container .inner-container i {
+    bottom: 119px;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .quote-container .inner-container i {
+    bottom: 140px;
   }
 }

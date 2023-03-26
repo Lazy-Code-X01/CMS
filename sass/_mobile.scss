@@ -85,6 +85,8 @@
     .nav_menu {
       display: block;
     }
+
+
   }
   
   @media screen and (max-width: 768px) {
@@ -235,6 +237,72 @@
      }
     }
 
-    // footer
-    
+    // ---------- contact mobile styling
+    .quote-container{
+      width: 90%;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    .contact-container{
+      padding: 2rem 2rem;
+
+      .inner-container{
+          gap: 2rem;
+        .desc{
+          width: 100%;
+          .card{
+            text-align: center;
+            .card-header{
+              justify-content: center;
+            }
+            p{
+              margin-bottom: 5px;
+              line-height: 1.2;
+            }
+          }
+        }
+
+        .contact-form{
+          width: 100%;
+            .form-holder{
+              input{
+                width: 100%;
+              }
+              textarea{
+                width: 100%;
+              }
+            }
+          .btn-container{
+            button{
+              padding: 15px 50px;
+            }
+          }
+        }
+      }
+    }
   }
+
+
+@media (max-width: 425px){
+  .contact-container{
+    padding: 2rem 1rem;
+  }
+  .quote-container{
+    .inner-container{
+      i{
+        bottom: 119px;
+        left: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .quote-container{
+    .inner-container{
+      i{
+        bottom: 140px;
+      }
+    }
+  }
+}
