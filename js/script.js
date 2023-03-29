@@ -64,6 +64,9 @@ scrollBtn.addEventListener("click", () => {
 });
 // end
 
+const signIn =  () => {
+  location.href = "https://caas-dashboard.netlify.app/";
+}
 
 
 
