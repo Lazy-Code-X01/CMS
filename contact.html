@@ -56,92 +56,59 @@
     
     <!-- hero section -->
     <section class="wrapper">
-        <div class=" cancel-overflow">
-          <div class="grid-cols-2">
-            <div class="grid-item-1">
-              <h1 class="main-heading">
-                Get in touch with us. <br>
-                <span class="main-heading-span">We are here to help you.</span>
-              </h1>
-            </div>
-  
-            <div class="grid-item-2">
-              <div class="team_img_wrapper">
-                <img src="./img/contact (2).svg" alt="team-img" />
+       <div class="container">
+        <div class="contact-container">
+
+          <div class="header">
+            <p>Get in Touch</p>
+            <p >We're Here for You...</p>
+          </div>
+
+          <div class="contact">
+            <div class="banner-section"></div>
+            <form action="" class="form">
+              <!--full name-->
+              <div class="form-holder">
+                <label for="fullName">Full name*</label>
+                <br>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
               </div>
-            </div>
+              <!--email-->
+              <div class="form-holder">
+                <label for="email">Email*</label>
+                <br>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+              <!--phone number-->
+              <div class="form-row">
+                <label for="phone">Phone:</label>
+                <div class="form-field">
+                  <select id="country-code" name="country-code">
+                    <option value="+234">+234 (Nigeria)</option>
+                    <option value="+44">+44 (United Kingdom)</option>
+                    <option value="+81">+81 (Japan)</option>
+                    <option value="+86">+86 (China)</option>
+                  </select>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+              <!--message-->
+              <div class="form-holder">
+                <label for="message">Message*</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+              </div>
+              <!--submit button-->
+              <div class="form-holder" style="margin-bottom: 0;">
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
+       </div>
       </section>
-      <!--quote section-->
-      <section class="wrapper">
-        <div class="container">
-            <div class="quote-container">
-                <div class="inner-container">
-                    <i class='bx bxs-quote-alt-left' ></i>
-                    <p>
-                        At CaaS, we belive that churhces should be able to focus on their core mission of spreading the gospel. We are here to help you with the rest.
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <!--contact section-->
-      <section class="wrapper">
-        <div class="container" >
-            <div class="contact-container" >
-                <div class="inner-container">
-                    <div class="desc">
-                        <div class="card">
-                            <div class="card-header">
-                                <i class='bx bx-chat' ></i>
-                                <h4>Contact Sales</h4>
-                            </div>
-                            <p>Get in touch with product expert to see how CaaS can help your Church<p>
-                            <p>Explore our pricing plans and see how CaaS can help your Church</p>
-                        </div>
-                        <div class="card card2">
-                            <div class="card-header">
-                                <i class='bx bx-support' ></i>
-                                <h4>Get Support</h4>
-                            </div>
-                            <p>Need a little help from a CaaS support representative? We're are here for you.<p>
-                        </div>
-                    </div>
-                    <form class="contact-form" >
-                        <div class="form-holder">
-                            <label for="name">Full name</label> 
-                            <br>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="form-holder">
-                            <label for="number">Phone number</label> 
-                            <br>
-                            <input type="number" id="number">
-                        </div>
-                        <div class="form-holder">
-                            <label for="email">Email</label> 
-                            <br>
-                            <input type="email" id="email">
-                        </div>
-                        <div class="form-holder">
-                            <label for="message">Message</label> 
-                            <br>
-                            <textarea id="message" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="btn-container">
-                            <button>
-                                <span>Send</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-      </section>
-
-         <!--footer-->
+    
+    <!--footer-->
     <footer class="wrapper">
         <div class="container">                        
           <div class="footer">
@@ -167,7 +134,7 @@
         <div class="copyright">
           <p>© CaaS 2023 All right reserved. </p>
         </div>
-      </footer>
+    </footer>
 
     <!-- ==== ANIMATE ON SCROLL JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -177,6 +144,7 @@
     
     <!-- ==== SCRIPT.JS ==== -->
     <script src="./js/script.js" defer></script> 
+    <script src="./js/contact.js" defer></script> 
     <!-- <script src="./js/email.js"></script> -->
 </body>
 </html>
