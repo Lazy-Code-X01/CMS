@@ -857,7 +857,7 @@ footer .copyright {
   height: 55px;
   border: none;
   outline: none;
-  background-color: #334157;
+  background-color: #030350;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -866,7 +866,7 @@ footer .copyright {
   transition: 0.2s ease;
 }
 .contact-container .contact .form .btn:hover {
-  background-color: #2a3542;
+  background-color: #030336;
 }
 
 .sign__up__form__container {
@@ -1221,7 +1221,8 @@ footer .copyright {
   }
   .contact-container .contact .form .form-row .form-field select {
     height: 40px;
-    width: 50%;
+    width: 70%;
+    background-color: #fff;
   }
 }
 @media screen and (max-width: 768px) {
