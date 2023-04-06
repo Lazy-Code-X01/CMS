@@ -251,6 +251,57 @@
 	}
 }
 
+// our goals section
+.our-goals-container{
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	// background-color: #000080;
+
+	h1{
+		font-size: 40px;
+		text-transform: capitalize;
+		color: #363636;
+		margin-bottom: .8em;
+		font-weight: 500;
+		text-align: center;
+
+		span {
+			color: $primaryColor;
+		}
+	}
+
+	.flex-container{
+		display: flex;
+		justify-content: space-between;
+		.flex{
+			width: 20%;
+			// background-color: green;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 5px;
+			gap:7px;
+
+			img{
+				width: 70px;
+			}
+			h1{
+				margin: 0;
+				font-size: 25px;
+				font-weight: 700;
+				color: $primaryColor;
+			}
+			p{
+				font-size: 16px;
+				color: #6b85d8;
+			}
+		}
+	}
+}
+
+
 //featured sectiom
 .featured_info {
 	width: 100%;
@@ -747,6 +798,7 @@ footer {
 		}
 	}
 }
+
 // ================== contact section styling ==================
 .sign__up__form__container{
     width: 100%;
