@@ -634,9 +634,17 @@ button {
 }
 .review-container .client-info .avatar {
   border-radius: 50%;
+  margin-right: 20px;
   width: 60px;
   height: 60px;
-  margin-right: 20px;
+}
+.review-container .client-info .svg {
+  font-size: 30px;
+  background-color: #000080;
+  border-radius: 50%;
+  margin-right: 15px;
+  color: white;
+  padding: 10px;
 }
 .review-container .client-info .name h4 {
   line-height: 1.5 !important;
@@ -834,10 +842,10 @@ footer .copyright {
   font-weight: 500;
   border: 1.5px solid skyblue;
   transition: 0.2s ease;
+  background-color: #fff !important;
 }
 .contact-container .contact .form .form-row .form-field select:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px rgba(245, 245, 245, 0.9607843137);
 }
 .contact-container .contact .form .form-row .form-field input {
   border: none;
